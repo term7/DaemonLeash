@@ -1,0 +1,2 @@
+# DaemonLeash
+Whenever you start your computer DaemonLeash checks for Adobe and Google Launch Daemons and disables them before they can connect to the internet. It also keeps listening in the background while you are using your favorite Adobe Application and terminates any persitent Adobe Backgound Process as soon as you finish using it. DaemonLeash consists of a Launch Daemon, a Launch Agent, four Shell Scripts and a Log File.
