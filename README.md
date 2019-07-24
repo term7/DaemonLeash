@@ -10,14 +10,14 @@ Whenever you start your computer DaemonLeash checks for Adobe and Google Launch 
 
 
 
-INSTALLATION
+# INSTALLATION
 
 We have written Install_DaemonLeash.sh that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, type your password and the script will run all necessary commands for you. You can view the whole installation process in your terminal window. 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh.
 
 
 
-MIT License
+# MIT License
 
 Copyright (c) 2019
 
