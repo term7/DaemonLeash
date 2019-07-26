@@ -29,19 +29,20 @@ If you have unresolved concerns, you have the right to report them to an EU or o
 
 You can find Adobe's full Privacy Policy here:
 
-	-> https://www.adobe.com/privacy/policy.html#rights
+->      https://www.adobe.com/privacy/policy.html#rights
 
-        -> https://www.adobe.com/privacy/policies.html
+->      https://www.adobe.com/privacy/policies.html
 
-        -> https://www.adobe.com/privacy/cookies.html
+->      https://www.adobe.com/privacy/cookies.html
 
-        -> https://www.adobe.com/privacy/general-data-protection-regulation.html
+->      https://www.adobe.com/privacy/general-data-protection-regulation.html
 
 
 You can request a copy of your data here:
 
-	-> privacy inquiry form: https://www.adobe.com/privacy/privacy-contact.html
-	-> email: DPO@adobe.com
+->      privacy inquiry form: https://www.adobe.com/privacy/privacy-contact.html
+
+->      email: mailto:DPO@adobe.com
 
 
 ### Note
@@ -54,7 +55,7 @@ Next, go back to System Preferences, click on Extensions and remove all hooks un
 
 If you further want to monitor, maybe even block outgoing connections of active apps, that send data from your computer to their developers while you are using them, we recommend you purchase Little Snitch. Little Snitch is a host-based application firewall for macOS. It can be used to monitor apps, preventing or permitting them to connect to attached networks through advanced rules. A Single License costs about \$45/45€/£45.
 
-    ->  https://www.obdev.at/index.html
+->	https://www.obdev.at/index.html
 
 
 ### MIT License
