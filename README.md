@@ -19,14 +19,6 @@ If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh.
 
 ### ADOBE PRIVACY POLICY
 
-You can find Adobe's full Privacy Policy here:
-
-	-> https://www.adobe.com/privacy/policy.html#rights
-	-> https://www.adobe.com/privacy/policies.html
-	-> https://www.adobe.com/privacy/cookies.html
-	-> https://www.adobe.com/privacy/general-data-protection-regulation.html
-  
-
 QUOTE:
 
 "Under the law of some countries, you may have the right to ask us for a copy of your personal information; to correct, delete or restrict (stop any active) processing of your personal information; and to obtain the personal information you provide to us for a contract or with your consent in a structured, machine readable format, and to ask us to share (port) this information to another controller.
@@ -34,6 +26,16 @@ In addition, you can object to the processing of your personal information in so
 These rights may be limited, for example, if fulfilling your request would reveal personal information about another person, or if you ask us to delete information which we are required by law to keep or have compelling legitimate interests in keeping (such as fraud prevention purposes).
 To exercise any of these rights (including deactivating your Adobe ID account), you can get in touch with us – or our data protection officer – using the details set out below.
 If you have unresolved concerns, you have the right to report them to an EU or other data protection authority where you live, work or where you believe a potential violation may have occurred."
+
+You can find Adobe's full Privacy Policy here:
+
+	-> https://www.adobe.com/privacy/policy.html#rights
+
+        -> https://www.adobe.com/privacy/policies.html
+
+        -> https://www.adobe.com/privacy/cookies.html
+
+        -> https://www.adobe.com/privacy/general-data-protection-regulation.html
 
 
 You can request a copy of your data here:
