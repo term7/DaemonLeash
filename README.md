@@ -65,7 +65,7 @@ If you further want to monitor, maybe even block outgoing connections of active 
 
 * [https://www.obdev.at/index.html](https://www.obdev.at/index.html)
     
-Adobe allows active subscribers to use Creative Cloud Software with a valid license offline for a limited period of time: the so-called grace period. During this time we actively use Little Snitch to block all outgoing Adobe traffic. As soon as the software reminds us that we have to reconnect to the Internet to validate our subscription, we briefly allow all Adobe prodocts to reconnect to the Adobe Servers, only to shut everything down again until the next grace period ends.
+ADOBE ALLOWS ACTIVE SUBSCRIBERS TO USE CREATIVE CLOUD WITH A VALID LICENSE OFFLINE FOR A LIMITED PERIOD OF TIME: THE SO-CALLED GRACE PERIOD. DURING THIS TIME YOU CAN USE LITTLE SNITCH TO BLOCK ALL OUTGOUNING ADOBE TRAFFIC. As soon as your Adobe product reminds you that you have to reconnect to the Internet to validate you subscription, briefly disable LittleSnitch and allow all Adobe prodocts to reconnect to the Adobe Servers. Then restart LittleSnitch to shut everything down again until the next grace period ends.
 
 * [https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html](https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html)
 
