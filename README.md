@@ -19,7 +19,7 @@ DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. 
 
 ### INSTALLATION
 
-We have written an Install_DaemonLeash.sh that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, type your password and the script will run all necessary commands for you. You can review the whole installation process in your terminal window. 
+We have written an Install_DaemonLeash.sh that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, when prompted type your admin password and the script will run all necessary commands for you. You can review the whole installation process in your terminal window. 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh.
 
 
