@@ -1,6 +1,6 @@
 # DaemonLeash for OS X
 
-We have been using Adobe Creative Cloud (for Mac OSX) for quite a while now and it came to our attention that several background processes connect to Adobe Servers to send out data as soon as we start our Computer (even though we did not start any Adobe Application). Software by Google does behave exactly the same way. These processes require processing power that we want to use in other ways. Yes, background processes check for updates too - yet we prefer to check for updates manually.
+We have been using Adobe Creative Cloud (for Mac OSX) for quite a while now and it came to our attention that several background processes connect to Adobe Servers to send out data as soon as we start our Computer (even though we did not actively start any Adobe Application). Software by Google does behave exactly the same way. These processes require processing power that we want to use in other ways. Yes, background processes check for updates too - yet we prefer to check for updates manually.
 
 Most importantly we do value our privacy. The average user does not exactly know what data is being collected, even though Adobe claims only to collect data to improve its products. Yet we think it already is intolerable that Adobe and Google automatically know when, where and for how long we use our computers just because we have their software installed on our system. We want to limit the collection of our data as much as we can.
 
@@ -17,12 +17,10 @@ To make things easy for the average user we combined all scripts in one single i
 DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cheating Adobe. We still encourage you to be an active subscriber as long as you want to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand - we have been there) we encourage you to terminate your Adobe subscription and to find an alternative.
 
 
-
 ### INSTALLATION
 
 We have written an Install_DaemonLeash.sh that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, type your password and the script will run all necessary commands for you. You can review the whole installation process in your terminal window. 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh.
-
 
 
 ### ADOBE PRIVACY POLICY
