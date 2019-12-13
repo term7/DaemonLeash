@@ -17,7 +17,7 @@ To make things easy for the average user we combined all scripts in one single i
 DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cheating Adobe. We still encourage you to be an active subscriber as long as you choose to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand - we have been there) we encourage you to terminate your Adobe subscription and to find an alternative.
 
 
-## INSTALLATION
+## PREREQUISITES & INSTALLATION
 
 We are using MacPorts, which is why this script will use the MacPorts directory as an install location. You may have to install MacPorts before you attempt to install DeamonLeash.
 
@@ -53,7 +53,7 @@ You can request a copy of all your data collected by Adobe here:
 * email: [DPO@adobe.com](mailto:DPO@adobe.com)
 
 
-### Note
+## Please Note
 
 Both Adobe and Google may automatically install Plugins and Startup Items on your Computer. You can disable them at any time:
 
