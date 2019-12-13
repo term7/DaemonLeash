@@ -50,7 +50,7 @@ You can find Adobe's full Privacy Policy here:
 You can request a copy of all your data collected by Adobe here:
 
 * privacy inquiry form: [https://www.adobe.com/privacy/privacy-contact.html](https://www.adobe.com/privacy/privacy-contact.html)
-* email: [mailto:DPO@adobe.com](DPO@adobe.com)
+* email: [DPO@adobe.com](mailto:DPO@adobe.com)
 
 
 ### Note
