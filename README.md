@@ -17,7 +17,7 @@ To make things easy for the average user we combined all scripts in one single i
 DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cheating Adobe. We still encourage you to be an active subscriber as long as you choose to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand - we have been there) we encourage you to terminate your Adobe subscription and to find an alternative.
 
 
-### INSTALLATION
+## INSTALLATION
 
 We are using MacPorts, which is why this script will use the MacPorts directory as an install location. You may have to install MacPorts before you attempt to install DeamonLeash.
 
@@ -29,7 +29,7 @@ We have written an Install_DaemonLeash.sh that will set up DaemonLeash for you. 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to remove DaemonLaesh and all related scripts.
 
 
-### ADOBE PRIVACY POLICY
+## ADOBE PRIVACY POLICY
 
 QUOTE:
 
@@ -70,7 +70,7 @@ Adobe allows active subscribers to use Creative Cloud Software with a valid lice
 * [https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html](https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html)
 
 
-### MIT License
+## MIT License
 
 Copyright (c) 2019
 
