@@ -19,7 +19,7 @@ DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. 
 
 ## PREREQUISITES & INSTALLATION
 
-We are using MacPorts, which is why this script will use the MacPorts directory as an install location. You may have to install MacPorts before you attempt to install DeamonLeash.
+We are using MacPorts, which is why this script will use the MacPorts directory as an install location. You may have to install MacPorts before you attempt to install DeamonLeash, or edit Install_DaemonLeash.sh to match your preferred install location.
 
 
 * [https://www.macports.org/install.php](https://www.macports.org/install.php)
