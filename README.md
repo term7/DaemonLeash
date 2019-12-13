@@ -21,9 +21,9 @@ DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. 
 
 We are using MacPorts, which is why this script will use the MacPorts directory as an install location. You may have to install MacPorts before you attempt to install DeamonLeash.
 
-```
-[https://www.macports.org/install.php](https://www.macports.org/install.php)
-```
+
+* [https://www.macports.org/install.php](https://www.macports.org/install.php)
+
     
 We have written an Install_DaemonLeash.sh that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, when prompted type your admin password and the script will run all necessary commands for you. You can review the whole installation process in your terminal window. 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to remove DaemonLaesh and all related scripts.
