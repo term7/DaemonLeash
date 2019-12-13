@@ -2,7 +2,7 @@
 
 #   Install_DaemonLeash.sh
 #
-#   guerill.art / 06.06.2019
+#   guerill.art / 06.08.2019
 
 #   This installation script has a lot of functionality that may be considered unnecessary. I.e. it pauses at certain times during the installation and displays a countdown. It echoes all commands to the terminal window and at certain times during the installation it displays informative texts and asks for user input. From a coders perspective this may be a waste of time - yet we have written this script with users in mind that are not used to the command line. We hope that by running this script, users will take the time to go through the installation process, to read and to understand some of the mechanics, not only of this script but also of their own computers.
 
@@ -245,7 +245,7 @@ echo "-> These Adobe Processes are currently running:" >> $LOG
 echo " " >> $LOG
 ApplicationLog >> $LOG
 BackgroundLog >> $LOG
-killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "node" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" "AdobeIPCBroker"
+killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" "AdobeIPCBroker"
 elif BackgroundApplicationCheck
 then
 sed -i '' '1,\$d' $LOG
@@ -264,7 +264,7 @@ echo "-> No Background Processes, yet these Adobe Processes are still running:" 
 echo " " >> $LOG
 ApplicationLog >> $LOG
 BackgroundLog >> $LOG
-killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "node" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" "AdobeIPCBroker"
+killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" "AdobeIPCBroker"
 else
 sed -i '' '1,\$d' $LOG
 date +'%d/%m/%Y %H:%M:%S' >> $LOG
