@@ -14,7 +14,7 @@ To make things easy for the average user we combined all scripts in one single i
 
 ### WHAT DAEMONLEASH IS NOT MEANT TO DO
 
-DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cheating Adobe. We still encourage you to be an active subscriber as long as you want to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand - we have been there) we encourage you to terminate your Adobe subscription and to find an alternative.
+DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cheating Adobe. We still encourage you to be an active subscriber as long as you choose to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand - we have been there) we encourage you to terminate your Adobe subscription and to find an alternative.
 
 
 ### INSTALLATION
