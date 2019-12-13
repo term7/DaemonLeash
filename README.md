@@ -41,16 +41,16 @@ If you have unresolved concerns, you have the right to report them to an EU or o
 
 You can find Adobe's full Privacy Policy here:
 
-    ->      https://www.adobe.com/privacy/policy.html#rights
-    ->      https://www.adobe.com/privacy/policies.html
-    ->      https://www.adobe.com/privacy/cookies.html
-    ->      https://www.adobe.com/privacy/general-data-protection-regulation.html
+* [https://www.adobe.com/privacy/policy.html#rights](https://www.adobe.com/privacy/policy.html#rights)
+* [https://www.adobe.com/privacy/policies.html](https://www.adobe.com/privacy/policies.html)
+* [https://www.adobe.com/privacy/cookies.html](https://www.adobe.com/privacy/cookies.html)
+* [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 
 
 You can request a copy of all your data collected by Adobe here:
 
-    ->      privacy inquiry form: https://www.adobe.com/privacy/privacy-contact.html
-    ->      email:  mailto:DPO@adobe.com
+* privacy inquiry form: [https://www.adobe.com/privacy/privacy-contact.html](https://www.adobe.com/privacy/privacy-contact.html)
+* email: [mailto:DPO@adobe.com](DPO@adobe.com)
 
 
 ### Note
@@ -63,11 +63,11 @@ Next, go back to System Preferences, click on Extensions and for each Plugin you
 
 If you further want to monitor, maybe even block outgoing connections of active apps, that send data from your computer to their developers while you are using them, we recommend you purchase Little Snitch. Little Snitch is a host-based application firewall for macOS. It can be used to monitor apps, preventing or permitting them to connect to attached networks through advanced rules. A Single License costs about \$45/45€/£45.
 
-    ->       https://www.obdev.at/index.html
+* [https://www.obdev.at/index.html](https://www.obdev.at/index.html)
     
 Adobe allows active subscribers to use Creative Cloud Software with a valid license offline for a limited period of time: the so-called grace period. During this time we actively use Little Snitch to block all outgoing Adobe traffic. As soon as the software reminds us that we have to reconnect to the Internet to validate our subscription, we briefly allow all Adobe prodocts to reconnect to the Adobe Servers, only to shut everything down again until the next grace period ends.
 
-    ->       https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html
+* [https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html](https://helpx.adobe.com/creative-cloud/kb/internet-connection-creative-cloud-apps.html)
 
 
 ### MIT License
