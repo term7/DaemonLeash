@@ -10,6 +10,8 @@ Whenever you start your computer DaemonLeash checks for both Adobe and Google La
 
 To make things easy for the average user we combined all scripts in one single install script and we also provide an uninstall script.
 
+Right now DaemonLeash targets Software by Adobe and Google, yet it can easily be adjusted to target LaunchDaemons created by other companies as well.
+
 
 
 ### WHAT DAEMONLEASH IS NOT MEANT TO DO
