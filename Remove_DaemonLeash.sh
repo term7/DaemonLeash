@@ -2,7 +2,7 @@
 
 #   Remove_DaemonLeash.sh
 #
-#   term7 / 29.05.2019
+#   term7 / 06.08.2019
 
 #   MIT License
 #   Copyright (c) 2019
