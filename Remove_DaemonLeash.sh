@@ -2,7 +2,7 @@
 
 #   Remove_DaemonLeash.sh
 #
-#   guerill.art / 29.05.2019
+#   term7 / 29.05.2019
 
 #   MIT License
 #   Copyright (c) 2019
