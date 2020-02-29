@@ -25,9 +25,14 @@ We are using MacPorts, which is why this script will use the MacPorts directory 
 
 * [https://www.macports.org/install.php](https://www.macports.org/install.php)
     
-    Install_DaemonLeash.sh is a script that will set up DaemonLeash for you.
-    Simply drag and drop the installation script into a terminal window, when prompted type your admin password and press Enter. The script will run all necessary commands for you. You can review the whole installation process in your terminal window. 
-If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to purge DaemonLaesh and all related scripts from your system.
+Install_DaemonLeash.sh is a script that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, when prompted type your admin password and press ENTER. The script will run all necessary commands for you. You can review the whole installation process in your terminal window.
+
+DeamonLeash will now automatically run on your Mac whenever you start your computer. To check the current DaemonLeash log file (to see whether or not all Adobe Processes have been terminated, or which processes are still runnig while you are using Adobe CC), enter this command into a Terminal Window:
+
+```cat /opt/daemonleash/DaemonLeash.log```
+
+If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to purge DaemonLaesh and all related scripts and daemons from your system.
+
 
 
 
