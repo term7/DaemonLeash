@@ -8,7 +8,7 @@ This is why we wrote DaemonLeash.
 
 Whenever you start your computer DaemonLeash checks for both Adobe and Google Launch Daemons and disables them before they can connect to the internet. It also keeps listening in the background while you are using your favorite Adobe Application and terminates any persitent Adobe Backgound Process as soon as you finish actively using the software.
 We did not implement a backgound listener for Google Processes, because we don't use Google Chrome. We recommend you use Mozilla Firefox or the Tor Browser. However we added Google Chrome as an example to show how DaemonLeash could be configured to target other background processes as well.
-Our script uses much less CPU power than the average Adobe background processe. DaemonLeash consists of a Launch Daemon, a Launch Agent, four Shell Scripts and a Log File.
+Our script uses much less CPU power than the average Adobe background process. DaemonLeash consists of a Launch Daemon, a Launch Agent, four Shell Scripts and a Log File.
 
 To make things easy for the average user we wrote one single install script that sets up DeamonLeash for you. If you don`t want to use DaemonLeash anymore, you can easily remove it with our uninstall script.
 
