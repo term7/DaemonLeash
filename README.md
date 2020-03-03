@@ -10,7 +10,7 @@ Whenever you start your computer DaemonLeash checks for both Adobe and Google La
 We did not implement a backgound listener for Google Processes, because we don't use Google Chrome. We recommend you use Mozilla Firefox or the Tor Browser. However we added Google Chrome as an example to show how DaemonLeash could be configured to target other background processes as well.
 Our script uses much less CPU power than the average Adobe background process. DaemonLeash consists of a Launch Daemon, a Launch Agent, four Shell Scripts and a Log File.
 
-To make things easy for the average user we wrote one single install script that sets up DeamonLeash for you. If you don`t want to use DaemonLeash anymore, you can easily remove it with our uninstall script.
+To make things easy for the average user who is not necessarily familiar with the command line, we wrote one single install script that sets up DeamonLeash for you. If you don't want to use DaemonLeash anymore, you can easily remove it with our uninstall script.
 
 Right now DaemonLeash targets Adobe CC and Google, yet it can easily be changed to unload other LaunchDaemons as well.
 
@@ -27,13 +27,13 @@ We are using MacPorts, which is why this script will use the MacPorts directory 
 
 * [https://www.macports.org/install.php](https://www.macports.org/install.php)
     
-Install_DaemonLeash.sh is a script that will set up DaemonLeash for you. Simply drag and drop the installation script into a terminal window, when prompted type your admin password and press ENTER. The script will run all necessary commands for you. You can review the whole installation process in your terminal window.
+Install_DaemonLeash.sh is a script that will set up DaemonLeash for you. Simply execute it, i.e. drag and drop the installation script into a terminal window, when prompted type your admin password and press ENTER. The script will run all necessary commands for you. You can review the whole installation process in your terminal window.
 
 DeamonLeash will now automatically run on your Mac whenever you start your computer. To check the current DaemonLeash log file (to see whether or not all Adobe Processes have been terminated, or which processes are still runnig while you are using Adobe CC), enter this command into a Terminal Window:
 
     cat /opt/daemonleash/DaemonLeash.log
 
-If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to purge DaemonLaesh and all related scripts and daemons from your system.
+If you don't want to use DaemonLeash anymore, simply execute Remove_DaemonLeash.sh to purge DaemonLaesh and all related scripts and daemons from your system.
 
 
 
