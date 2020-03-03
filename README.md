@@ -31,7 +31,7 @@ Install_DaemonLeash.sh is a script that will set up DaemonLeash for you. Simply 
 
 DeamonLeash will now automatically run on your Mac whenever you start your computer. To check the current DaemonLeash log file (to see whether or not all Adobe Processes have been terminated, or which processes are still runnig while you are using Adobe CC), enter this command into a Terminal Window:
 
-```cat /opt/daemonleash/DaemonLeash.log```
+    cat /opt/daemonleash/DaemonLeash.log
 
 If you don't want to use DaemonLeash anymore, simply run Remove_DaemonLeash.sh to purge DaemonLaesh and all related scripts and daemons from your system.
 
