@@ -14,6 +14,10 @@ To make things easy for the average user who is not necessarily familiar with th
 
 Right now DaemonLeash targets Adobe CC and Google, yet it can easily be changed to unload other LaunchDaemons as well.
 
+<p align="center">
+  <img src="/png/DaemonLeash.png" title="DaemonLeash">
+</p>
+
 
 ### WHAT DAEMONLEASH IS NOT MEANT TO DO
 
