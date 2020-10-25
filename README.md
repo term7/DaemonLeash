@@ -1,3 +1,6 @@
+A word in advance: we stopped using Adobe a while ago and we found software alternatives for all our needs, which is why we also stopped to maintain this script. Adobe might have changed its LaunchDeamons and this script might not catch them anymore...
+
+
 # DaemonLeash for OS X
 
 We have been using Adobe Creative Cloud (for Mac OSX) for quite a while now and it came to our attention that several background processes connect to Adobe Servers to send out data as soon as we start our Computer (even though we did not start any Adobe Application). Google Chrome does behave exactly the same way. These processes require processing power that we want to use in other ways. Yes, background processes check for updates too - yet we prefer to check for updates manually.
@@ -21,7 +24,7 @@ Right now DaemonLeash targets Adobe CC and Google, yet it can easily be changed 
 
 ### WHAT DAEMONLEASH IS NOT MEANT TO DO
 
-DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cracking Adobe CC. We still encourage you to be an active subscriber as long as you want to use Adobe Software. If you don't want to pay for Adobe products (which we totally understand) we encourage you to terminate your Adobe subscription and to find alternative software.
+DeamonLeash is meant to enhance your privacy and to free CPU power on your MAC. It is not meant to aid you in cracking Adobe CC. If you don't want to pay for Adobe products (which we totally understand) we encourage you to terminate your Adobe subscription and to find alternative software.
 
 
 
