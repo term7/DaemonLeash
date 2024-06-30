@@ -1,4 +1,4 @@
-A word in advance: we stopped using Adobe a while ago and we found software alternatives for all our needs, which is why we also stopped to maintain this script. Adobe might have changed its LaunchDeamons and this script might not catch them anymore...
+<strong>A word in advance: we stopped using Adobe a while ago and we found software alternatives that cover all our needs. This is the reason why we also stopped to maintain this script. Adobe might have changed its background processes (which this script is looking for), which is why this script might not catch all of them anymore...</strong>
 
 
 # DaemonLeash for OS X
