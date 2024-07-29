@@ -132,8 +132,9 @@ echo "--------------------------------------------------------------------------
 echo '\n'
 echo '\n'
 
-SCRIPT_FOLDER=/opt/daemonleash
-LIST_FOLDER=/opt/daemonleash/dynamiclist
+ENHANCEMENTS=/Users/Shared/Enhancements
+SCRIPT_FOLDER=/Users/Shared/Enhancements/daemonleash
+LIST_FOLDER=/Users/Shared/Enhancements/daemonleash/dynamiclist
 
 GLOBAL_UNLOAD_LIST=$LIST_FOLDER/GlobalUnloadList.sh
 UNLOAD=$SCRIPT_FOLDER/DaemonLeash.sh
@@ -141,23 +142,32 @@ UNLOAD_HELPER=$SCRIPT_FOLDER/DeamonLeashHelper.sh
 USER_UNLOAD_LIST=$LIST_FOLDER/LocalUnloadList.sh
 LOG=$SCRIPT_FOLDER/DaemonLeash.log
 
-echo "sudo mkdir /opt/daemonleash"
+if [ ! -d "$ENHANCEMENTS" ]; then
+    sudo -u $(stat -f '%Su' /dev/console) mkdir $ENHANCEMENTS
+fi
+
+echo "if [ ! -d \"${ENHANCEMENTS}\" ]; then sudo -u $(stat -f '%Su' /dev/console) mkdir ${ENHANCEMENTS} fi"
+echo "sudo mkdir /Users/Shared/Enhancements/daemonleash"
 sudo mkdir "$SCRIPT_FOLDER"
-echo "sudo mkdir /opt/daemonleash/dynamiclist"
+echo "sudo mkdir /Users/Shared/Enhancements/daemonleash/dynamiclist"
 sudo mkdir "$LIST_FOLDER"
 echo "sudo touch $LOG"
 sudo touch "$LOG"
 echo '\n'
+
+sleep 1
+echo "sudo chown $(stat -f '%Su' /dev/console):wheel ${ENHANCEMENTS}"
+sudo chown $(stat -f '%Su' /dev/console):wheel "$ENHANCEMENTS"
 
 [ -e "$GLOBAL_UNLOAD_LIST" ] || sudo touch "$GLOBAL_UNLOAD_LIST"
 [ -e "$USER_UNLOAD_LIST" ] || sudo touch "$USER_UNLOAD_LIST"
 [ -e "$UNLOAD" ] || sudo touch "$UNLOAD"
 
 
-echo "Installation Path: /opt/daemonleash/dynamiclist/GlobalUnloadList.sh"
+echo "Installation Path: /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh"
 echo "-> More info on GlobalUnloadDaemon.sh: DaemonLEASH/README.md"
 echo '\n'
-echo "Installation Path: /opt/daemonleash/dynamiclist/LocalUnloadList.sh"
+echo "Installation Path: /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh"
 echo "-> More info on LocalUnloadDaemon.sh: DaemonLEASH/README.md"
 echo '\n'
 
@@ -171,10 +181,10 @@ sudo tee "$USER_UNLOAD_LIST" << EOF > /dev/null
 #!/bin/sh
 EOF
 
-echo "Installation Path: /opt/daemonleash/DaemonLeash.sh"
+echo "Installation Path: /Users/Shared/Enhancements/daemonleash/DaemonLeash.sh"
 echo "-> More info on DaemonLeash.sh: DaemonLEASH/README.md"
 echo '\n'
-echo "Installation Path: /opt/daemonleash/DaemonLeashHelper.sh"
+echo "Installation Path: /Users/Shared/Enhancements/daemonleash/DaemonLeashHelper.sh"
 echo "-> More info on DaemonLeashHelper.sh: DaemonLEASH/README.md"
 echo '\n'
 
@@ -297,22 +307,22 @@ fi
 done
 EOF
 
-echo "sudo chown root:wheel /opt/daemonleash/DaemonLeash.sh"
-echo "sudo chown root:wheel /opt/daemonleash/dynamiclist/GlobalUnloadList.sh"
-echo "sudo chown $(whoami):admin /opt/daemonleash/DaemonLeashHelper.sh"
-echo "sudo chown $(whoami):admin /opt/daemonleash/dynamiclist/LocalUnloadList.sh"
-echo "sudo chown root:wheel /opt/daemonleash/DaemonLeash.log"
+echo "sudo chown root:wheel /Users/Shared/Enhancements/daemonleash/DaemonLeash.sh"
+echo "sudo chown root:wheel /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh"
+echo "sudo chown $(stat -f '%Su' /dev/console):wheel /Users/Shared/Enhancements/daemonleash/DaemonLeashHelper.sh"
+echo "sudo chown $(stat -f '%Su' /dev/console):wheel /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh"
+echo "sudo chown root:wheel /Users/Shared/Enhancements/daemonleash/DaemonLeash.log"
 
 #  At this point we define file ownership:
 
 sudo chown root:wheel "$GLOBAL_UNLOAD_LIST" "$UNLOAD" "$LOG"
-sudo chown $(whoami):admin "$USER_UNLOAD_LIST" "$UNLOAD_HELPER"
+sudo chown $(stat -f '%Su' /dev/console):wheel "$USER_UNLOAD_LIST" "$UNLOAD_HELPER"
 
-echo "sudo chmod 744 /opt/daemonleash/DaemonLeash.sh"
-echo "sudo chmod 744 /opt/daemonleash/dynamiclist/GlobalUnloadList.sh"
-echo "sudo chmod 744 /opt/daemonleash/DaemonLeashHelper.sh"
-echo "sudo chmod 744 /opt/daemonleash/dynamiclist/LocalUnloadList.sh"
-echo "sudo chmod 644 /opt/daemonleash/AdobeBackgroundProcess.log"
+echo "sudo chmod 744 /Users/Shared/Enhancements/daemonleash/DaemonLeash.sh"
+echo "sudo chmod 744 /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh"
+echo "sudo chmod 744 /Users/Shared/Enhancements/daemonleash/DaemonLeashHelper.sh"
+echo "sudo chmod 744 /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh"
+echo "sudo chmod 644 /Users/Shared/Enhancements/daemonleash/AdobeBackgroundProcess.log"
 
 #  At this point we define our file permissions:
 
@@ -357,16 +367,16 @@ sudo tee "$GLOBAL_LEASH_DAEMON" << EOF > /dev/null
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key>KeepAlive</key>
-<true/>
-<key>Label</key>
-<string>${GLOBAL_LEASH_DAEMON_NAME}</string>
-<key>ProgramArguments</key>
-<array>
-<string>${UNLOAD}</string>
-</array>
-<key>RunAtLoad</key>
-<true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>Label</key>
+    <string>${GLOBAL_LEASH_DAEMON_NAME}</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>${UNLOAD}</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
 </dict>
 </plist>
 EOF
@@ -388,16 +398,16 @@ sudo tee "$LOCAL_LEASH_HELPER" << EOF > /dev/null
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key>Label</key>
-<string>${LOCAL_LEASH_HELPER_NAME}</string>
-<key>RunAtLoad</key>
-<true/>
-<key>KeepAlive</key>
-<true/>
-<key>ProgramArguments</key>
-<array>
-<string>${UNLOAD_HELPER}</string>
-</array>
+    <key>Label</key>
+    <string>${LOCAL_LEASH_HELPER_NAME}</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>${UNLOAD_HELPER}</string>
+    </array>
 </dict>
 </plist>
 EOF

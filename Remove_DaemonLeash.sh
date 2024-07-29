@@ -75,7 +75,7 @@ echo '\n'
 echo '\n'
 echo '\n'
 
-SCRIPT_FOLDER=/opt/daemonleash
+SCRIPT_FOLDER=/Users/Shared/Enhancements/daemonleash
 
 DAEMON_FOLDER=/Library/LaunchDaemons
 GLOBAL_LEASH_DAEMON_NAME=daemon.leash
@@ -95,7 +95,7 @@ sudo rm -f "$GLOBAL_LEASH_DAEMON"
 echo "sudo rm -f /Library/LaunchAgents/daemon.leash.helper.plist"
 sudo rm -f "$LOCAL_LEASH_HELPER"
 
-echo "sudo rm -R -f /opt/daemonleash"
+echo "sudo rm -R -f /Users/Shared/Enhancements/daemonleash"
 sudo rm -R -f "$SCRIPT_FOLDER"
 
 echo '\n'
