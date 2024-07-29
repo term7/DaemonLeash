@@ -2,15 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Label</key>
-	<string>daemon.leash.helper</string>
-	<key>RunAtLoad</key>
-	<true/>
 	<key>KeepAlive</key>
 	<true/>
+	<key>Label</key>
+	<string>term7.daemon.leash</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/Shared/Enhancements/DaemonLeash/DeamonLeashHelper.sh</string>
+		<string>/Users/Shared/Enhancements/DaemonLeash/DaemonLeash.sh</string>
 	</array>
+	<key>RunAtLoad</key>
+	<true/>
 </dict>
 </plist>

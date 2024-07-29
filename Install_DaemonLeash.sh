@@ -361,7 +361,7 @@ echo "-> More info on daemon.leash.plist: DaemonLEASH/README.md"
 echo '\n'
 
 DAEMON_FOLDER=/Library/LaunchDaemons
-GLOBAL_LEASH_DAEMON_NAME=daemon.leash
+GLOBAL_LEASH_DAEMON_NAME=term7.daemon.leash
 GLOBAL_LEASH_DAEMON=$DAEMON_FOLDER/$GLOBAL_LEASH_DAEMON_NAME.plist
 
 [ -e "$GLOBAL_LEASH_DAEMON" ] || sudo touch "$GLOBAL_LEASH_DAEMON"
@@ -387,12 +387,12 @@ sudo tee "$GLOBAL_LEASH_DAEMON" << EOF > /dev/null
 </plist>
 EOF
 
-echo "Installation Path: /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "Installation Path: /Library/LaunchAgents/term7.daemon.leash.helper.plist"
 echo "-> More info on daemon.leash.helper.plist: DaemonLEASH/README.md"
 echo '\n'
 
 LOCAL_DAEMON_FOLDER=/Library/LaunchAgents
-LOCAL_LEASH_HELPER_NAME=daemon.leash.helper
+LOCAL_LEASH_HELPER_NAME=term7.daemon.leash.helper
 LOCAL_LEASH_HELPER=$LOCAL_DAEMON_FOLDER/$LOCAL_LEASH_HELPER_NAME.plist
 
 [ -e "$LOCAL_LEASH_HELPER" ] || sudo touch "$LOCAL_LEASH_HELPER"
