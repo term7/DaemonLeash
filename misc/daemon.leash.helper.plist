@@ -10,7 +10,7 @@
 	<true/>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/Shared/Enhancements/daemonleash/DeamonLeashHelper.sh</string>
+		<string>/Users/Shared/Enhancements/DaemonLeash/DeamonLeashHelper.sh</string>
 	</array>
 </dict>
 </plist>

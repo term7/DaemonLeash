@@ -1,22 +1,22 @@
 #!/bin/bash
 
 #   First DaemonLeash clears the old unload command list of Adobe/Google LaunchDaemons and LaunchAgents.
-sed -i '' /com.adobe.*/d /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
-sed -i '' /com.google.*/d /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
-sed -i '' /com.adobe.*/d /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh;
-sed -i '' /com.google.*/d /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh;
+sed -i '' /com.adobe.*/d /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
+sed -i '' /com.google.*/d /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
+sed -i '' /com.adobe.*/d /Users/Shared/Enhancements/DaemonLeash/dynamiclist/GlobalUnloadList.sh;
+sed -i '' /com.google.*/d /Users/Shared/Enhancements/DaemonLeash/dynamiclist/GlobalUnloadList.sh;
 
 #   Next it fills the two unload command lists again with all Adobe/Google Launch Daemons and LaunchAgents.
-find /Library/LaunchDaemons \( -name "com.adobe.*" \) | sed 's/^/sudo launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh;
-find /Library/LaunchDaemons \( -name "com.google.*" \) | sed 's/^/sudo launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh;
-find /Library/LaunchAgents \( -name "com.adobe.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
-find /Users/bleeeth/Library/LaunchAgents \( -name "com.adobe.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
-find /Library/LaunchAgents \( -name "com.google.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
-find /Users/bleeeth/Library/LaunchAgents \( -name "com.google.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/daemonleash/dynamiclist/LocalUnloadList.sh;
+find /Library/LaunchDaemons \( -name "com.adobe.*" \) | sed 's/^/sudo launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/GlobalUnloadList.sh;
+find /Library/LaunchDaemons \( -name "com.google.*" \) | sed 's/^/sudo launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/GlobalUnloadList.sh;
+find /Library/LaunchAgents \( -name "com.adobe.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
+find /Users/bleeeth/Library/LaunchAgents \( -name "com.adobe.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
+find /Library/LaunchAgents \( -name "com.google.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
+find /Users/bleeeth/Library/LaunchAgents \( -name "com.google.*" \) | sed 's/^/launchctl unload /' >> /Users/Shared/Enhancements/DaemonLeash/dynamiclist/LocalUnloadList.sh;
 
 #   Because this script is started and owned by root it can now also unload all LaunchDaemons
 
-/Users/Shared/Enhancements/daemonleash/dynamiclist/GlobalUnloadList.sh
+/Users/Shared/Enhancements/DaemonLeash/dynamiclist/GlobalUnloadList.sh
 
 #   Next we define the functions that check for running processes. Please note: we have split each function in two functions. We decided to do this because it makes it possible to write the readout of one function to the log file and use the other function to tell the sript that processes are running.
 #   1) We need two functions for all active apps that are in use.
@@ -46,47 +46,47 @@ do
 
 if Exception  > /dev/null
 then
-sed -i '' '1,$d' /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo "-> These Adobe Processes are currently running:" >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-ApplicationLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-BackgroundLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+sed -i '' '1,$d' /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo "-> These Adobe Processes are currently running:" >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+ApplicationLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+BackgroundLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 elif ApplicationCheck && BackgroundApplicationCheck
 then
-sed -i '' '1,$d' /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo "-> These Adobe Processes are currently running:" >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-ApplicationLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-BackgroundLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+sed -i '' '1,$d' /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo "-> These Adobe Processes are currently running:" >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+ApplicationLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+BackgroundLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" Adobe_CCXProcess.node "AdobeIPCBroker"
 elif BackgroundApplicationCheck
 then
-sed -i '' '1,$d' /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+sed -i '' '1,$d' /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" Adobe_CCXProcess.node "AdobeIPCBroker"
-echo "-> Adobe Background Processes terminated." >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-ApplicationLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+echo "-> Adobe Background Processes terminated." >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+ApplicationLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 elif ApplicationCheck
 then
-sed -i '' '1,$d' /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo "-> No Background Processes, yet these Adobe Processes are still running:" >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-ApplicationLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-BackgroundLog >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+sed -i '' '1,$d' /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo "-> No Background Processes, yet these Adobe Processes are still running:" >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+ApplicationLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+BackgroundLog >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 killall ACCFinderSync "Adobe Creative" "Core Sync" "AdobeCRDaemon" "Adobe CCXProcess.app" "Adobe Desktop Service" "Adobe Crash Reporter" "LogTransport2" "AdobeResourceSynchronizer" "node" Adobe_CCXProcess.node "AdobeIPCBroker"
 else
-sed -i '' '1,$d' /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo " " >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
-echo "-> No Adobe Processes are currently running." >> /Users/Shared/Enhancements/daemonleash/DaemonLeash.log
+sed -i '' '1,$d' /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+date +'%d/%m/%Y %H:%M:%S' >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo " " >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
+echo "-> No Adobe Processes are currently running." >> /Users/Shared/Enhancements/DaemonLeash/DaemonLeash.log
 fi
 
 #  Loop interval currently set to 60 seconds.

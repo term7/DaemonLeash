@@ -8,7 +8,7 @@
 	<string>daemon.leash</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/Shared/Enhancements/daemonleash/DaemonLeash.sh</string>
+		<string>/Users/Shared/Enhancements/DaemonLeash/DaemonLeash.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
