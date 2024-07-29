@@ -5,7 +5,7 @@
 	<key>KeepAlive</key>
 	<true/>
 	<key>Label</key>
-	<string>term7.daemon.leash</string>
+	<string>info.term7.daemon.leash</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Users/Shared/Enhancements/DaemonLeash/DaemonLeash.sh</string>

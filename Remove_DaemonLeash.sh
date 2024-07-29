@@ -78,21 +78,21 @@ echo '\n'
 SCRIPT_FOLDER=/Users/Shared/Enhancements/DaemonLeash
 
 DAEMON_FOLDER=/Library/LaunchDaemons
-GLOBAL_LEASH_DAEMON_NAME=daemon.leash
+GLOBAL_LEASH_DAEMON_NAME=info.term7.daemon.leash
 GLOBAL_LEASH_DAEMON=$DAEMON_FOLDER/$GLOBAL_LEASH_DAEMON_NAME.plist
 
 LOCAL_DAEMON_FOLDER=/Library/LaunchAgents
-LOCAL_LEASH_HELPER_NAME=daemon.leash.helper
+LOCAL_LEASH_HELPER_NAME=info.term7.daemon.leash.helper
 LOCAL_LEASH_HELPER=$LOCAL_DAEMON_FOLDER/$LOCAL_LEASH_HELPER_NAME.plist
 
-echo "sudo launchctl unload /Library/LaunchDaemons/daemon.leash.plist"
-echo "launchctl unload /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "sudo launchctl unload /Library/LaunchDaemons/info.term7.daemon.leash.plist"
+echo "launchctl unload /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 sudo launchctl unload "$GLOBAL_LEASH_DAEMON"
 launchctl unload "$LOCAL_LEASH_HELPER"
 echo '\n'
-echo "sudo rm -f /Library/LaunchDaemons/daemon.leash.plist"
+echo "sudo rm -f /Library/LaunchDaemons/info.term7.daemon.leash.plist"
 sudo rm -f "$GLOBAL_LEASH_DAEMON"
-echo "sudo rm -f /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "sudo rm -f /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 sudo rm -f "$LOCAL_LEASH_HELPER"
 
 echo "sudo rm -R -f /Users/Shared/Enhancements/DaemonLeash"

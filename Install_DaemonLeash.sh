@@ -356,12 +356,12 @@ echo "--------------------------------------------------------------------------
 echo '\n'
 echo '\n'
 
-echo "Installation Path: /Library/LaunchDaemons/daemon.leash.plist"
-echo "-> More info on daemon.leash.plist: DaemonLEASH/README.md"
+echo "Installation Path: /Library/LaunchDaemons/info.term7.daemon.leash.plist"
+echo "-> More info on info.term7.daemon.leash.plist: DaemonLEASH/README.md"
 echo '\n'
 
 DAEMON_FOLDER=/Library/LaunchDaemons
-GLOBAL_LEASH_DAEMON_NAME=term7.daemon.leash
+GLOBAL_LEASH_DAEMON_NAME=info.term7.daemon.leash
 GLOBAL_LEASH_DAEMON=$DAEMON_FOLDER/$GLOBAL_LEASH_DAEMON_NAME.plist
 
 [ -e "$GLOBAL_LEASH_DAEMON" ] || sudo touch "$GLOBAL_LEASH_DAEMON"
@@ -387,12 +387,12 @@ sudo tee "$GLOBAL_LEASH_DAEMON" << EOF > /dev/null
 </plist>
 EOF
 
-echo "Installation Path: /Library/LaunchAgents/term7.daemon.leash.helper.plist"
+echo "Installation Path: /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 echo "-> More info on daemon.leash.helper.plist: DaemonLEASH/README.md"
 echo '\n'
 
 LOCAL_DAEMON_FOLDER=/Library/LaunchAgents
-LOCAL_LEASH_HELPER_NAME=term7.daemon.leash.helper
+LOCAL_LEASH_HELPER_NAME=info.term7.daemon.leash.helper
 LOCAL_LEASH_HELPER=$LOCAL_DAEMON_FOLDER/$LOCAL_LEASH_HELPER_NAME.plist
 
 [ -e "$LOCAL_LEASH_HELPER" ] || sudo touch "$LOCAL_LEASH_HELPER"
@@ -420,17 +420,17 @@ EOF
 
 #  At last we set file ownership and permissions and load both Daemonleash LaunchDaemon and LaunchAgent.
 
-echo "sudo chown root:wheel /Library/LaunchDaemons/daemon.leash.plist"
-echo "sudo chown root:wheel /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "sudo chown root:wheel /Library/LaunchDaemons/info.term7.daemon.leash.plist"
+echo "sudo chown root:wheel /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 sudo chown root:wheel "$GLOBAL_LEASH_DAEMON" "$LOCAL_LEASH_HELPER"
 
-echo "sudo chmod 644 /Library/LaunchDaemons/daemon.leash.plist"
-echo "sudo chmod 644 /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "sudo chmod 644 /Library/LaunchDaemons/info.term7.daemon.leash.plist"
+echo "sudo chmod 644 /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 sudo chmod 644 "$GLOBAL_LEASH_DAEMON" "$LOCAL_LEASH_HELPER"
 
-echo "sudo launchctl load /Library/LaunchDaemons/daemon.leash.plist"
+echo "sudo launchctl load /Library/LaunchDaemons/info.term7.daemon.leash.plist"
 sudo launchctl load "$GLOBAL_LEASH_DAEMON"
-echo "launchctl load /Library/LaunchAgents/daemon.leash.helper.plist"
+echo "launchctl load /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
 launchctl load "$LOCAL_LEASH_HELPER"
 
 echo '\n'

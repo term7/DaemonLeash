@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>term7.daemon.leash.helper</string>
+	<string>info.term7.daemon.leash.helper</string>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>KeepAlive</key>
