@@ -159,6 +159,9 @@ sleep 1
 echo "sudo chown $(stat -f '%Su' /dev/console):wheel ${ENHANCEMENTS}"
 sudo chown $(stat -f '%Su' /dev/console):wheel "$ENHANCEMENTS"
 
+echo "sudo chown $(stat -f '%Su' /dev/console):wheel ${SCRIPT_FOLDER}"
+sudo chown -R $(stat -f '%Su' /dev/console):wheel "$SCRIPT_FOLDER"
+
 [ -e "$GLOBAL_UNLOAD_LIST" ] || sudo touch "$GLOBAL_UNLOAD_LIST"
 [ -e "$USER_UNLOAD_LIST" ] || sudo touch "$USER_UNLOAD_LIST"
 [ -e "$UNLOAD" ] || sudo touch "$UNLOAD"
