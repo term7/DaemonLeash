@@ -388,7 +388,7 @@ sudo tee "$GLOBAL_LEASH_DAEMON" << EOF > /dev/null
 EOF
 
 echo "Installation Path: /Library/LaunchAgents/info.term7.daemon.leash.helper.plist"
-echo "-> More info on daemon.leash.helper.plist: DaemonLEASH/README.md"
+echo "-> More info on info.term7.daemon.leash.helper.plist: DaemonLEASH/README.md"
 echo '\n'
 
 LOCAL_DAEMON_FOLDER=/Library/LaunchAgents
