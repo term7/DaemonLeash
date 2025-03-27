@@ -1,5 +1,9 @@
 <strong>A word in advance: we stopped using Adobe a while ago and we found software alternatives that cover all our needs. This is the reason why we also stopped to maintain this script. Adobe might have changed its background processes (this script is looking for Adobe background processes), which is why this script might not catch all of them anymore...</strong>
 
+# RELATED CONTENT ON OUR WEBSITE:
+
+[https://term7.info/6-reasons-to-stop-using-adobe-cc/](https://term7.info/6-reasons-to-stop-using-adobe-cc/)<br>
+[https://term7.info/daemonleash/](https://term7.info/daemonleash/)
 
 # DaemonLeash for OS X
 
