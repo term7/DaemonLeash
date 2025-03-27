@@ -5,6 +5,8 @@
 [https://term7.info/6-reasons-to-stop-using-adobe-cc/](https://term7.info/6-reasons-to-stop-using-adobe-cc/)<br>
 [https://term7.info/daemonleash/](https://term7.info/daemonleash/)
 
+* * *
+
 # DaemonLeash for OS X
 
 We have been using Adobe Creative Cloud (for Mac OSX) for quite a while now and it came to our attention that several background processes connect to Adobe Servers to send out data as soon as we start our Computer (even though we did not start any Adobe Application). Google Chrome does behave exactly the same way. These processes require processing power that we want to use in other ways. Yes, background processes check for updates too - yet we prefer to check for updates manually.
