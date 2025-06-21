@@ -111,7 +111,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ***
 
-# **Mirrors**
+# **MIRRORS**
 
 This repository is actively maintained on Codeberg:<br>
 https://codeberg.org/term7/DaemonLeash
