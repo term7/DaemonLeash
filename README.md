@@ -114,5 +114,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 This repository is actively maintained on Codeberg:
 https://codeberg.org/term7/DaemonLeash
 
-Changes are puhsed regularily to our Githoub Mirror:
+Changes are puhsed regularly to our Githoub Mirror:
 https://github.com/term7/DaemonLeash
