@@ -113,8 +113,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # **MIRRORS**
 
-This repository is actively maintained on Codeberg:<br>
+This repository is has been archived and is no longer maintained on Codeberg:<br>
 https://codeberg.org/term7/DaemonLeash
 
-Changes are pushed regularly to our Githoub Mirror:<br>
+The archive is also available on Github:<br>
 https://github.com/term7/DaemonLeash
